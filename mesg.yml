@@ -1,0 +1,20 @@
+name: "Slack"
+tasks:
+  notify:
+    inputs:
+      title: 
+        type: String
+      token: 
+        type: String
+    outputs:
+      success:
+        data:
+          foo:
+            type: String
+      error:
+        data:
+          error:
+            type: String
+dependencies:
+  slack:
+    image: mesg/slack
