@@ -2,19 +2,24 @@ name: "Slack"
 tasks:
   notify:
     inputs:
-      title: 
+      endpoint:
+        description: "Create a webhook here https://slack.com/apps/new/A0F7XDUAZ-incoming-webhooks"
         type: String
-      token: 
+      text: 
+        description: "Content of the text you want to send"
+        type: String
+      icon_emoji: 
+        description: "Emoji for the bot picture. Find the emoji in your slack"
+        type: String
+      username:
+        description: "Name of the user that will post the message"
         type: String
     outputs:
       success:
-        data:
-          foo:
-            type: String
+        description: "Result when everything is fine"
+        data: {}
       error:
+        description: "Result when an error happend"
         data:
-          error:
+          message:
             type: String
-dependencies:
-  slack:
-    image: mesg/slack

@@ -1,8 +1,6 @@
-FROM golang
-WORKDIR /go/src/app
-RUN go get github.com/mesg-foundation/core/api/service && \
-    go get github.com/bluele/slack
+FROM node
+WORKDIR /app
+COPY ./package* ./
+RUN npm install
 COPY . .
-RUN go install -v ./...
-RUN go build main.go
-CMD [ "./main" ]
+CMD [ "node", "index.js" ]

@@ -1,0 +1,23 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "description": "MESG Service to send Slack notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesg-foundation/service-slack.git"
+  },
+  "author": "Anthony Estebe <anthony@mesg.tech>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mesg-foundation/service-slack/issues"
+  },
+  "homepage": "https://github.com/mesg-foundation/service-slack#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "mesg-js": "^1.1.0"
+  }
+}
