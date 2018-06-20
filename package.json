@@ -18,6 +18,6 @@
   "homepage": "https://github.com/mesg-foundation/service-slack#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "mesg-js": "^1.1.2"
+    "mesg-js": "^1.2.1"
   }
 }
