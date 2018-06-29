@@ -1,4 +1,5 @@
 name: "Slack"
+description: "Send notification through Slack API"
 tasks:
   notify:
     inputs:
@@ -22,4 +23,5 @@ tasks:
         description: "Result when an error happend"
         data:
           message:
+            description: "The description of the error"
             type: String
