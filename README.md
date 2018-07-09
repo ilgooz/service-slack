@@ -1,6 +1,6 @@
 # Slack
 
-Send notification through Slack API
+Send a notification through Slack's API
 
 ```
 mesg-core service deploy https://github.com/mesg-foundation/service-slack.git
@@ -19,7 +19,7 @@ Task key: **notify**
 | **key** | **type** | **description** |
 | --- | --- | --- |
 | **endpoint** | `String` | Create a webhook here https://slack.com/apps/new/A0F7XDUAZ-incoming-webhooks |
-| **icon_emoji** | `String` | Emoji for the bot picture. Find the emoji in your slack |
+| **icon_emoji** | `String` | Emoji for the bot picture. Find the emoji in your Slack |
 | **text** | `String` | Content of the text you want to send |
 | **username** | `String` | Name of the user that will post the message |
 
@@ -40,7 +40,7 @@ Result when an error happend
 
 Output key: **success**
 
-Result when everything is fine
+Result when everything is as expected
 
 | **key** | **type** | **description** |
 | --- | --- | --- |
